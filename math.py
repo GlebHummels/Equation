@@ -141,7 +141,6 @@ class MyWidget(QMainWindow):
         uic.loadUi('math.ui', self)
         self.pushButton.clicked.connect(self.result)
         self.actionClos.triggered.connect(self.close)
-        self.pushButton_2.clicked.connect(self.update_table)
         self.spinBox_2.valueChanged.connect(self.update_table)
         self.base = sqlite3.connect("math.db")
         self.data = self.base.cursor()
